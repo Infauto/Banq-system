@@ -1,0 +1,22 @@
+interface interface_compte
+{
+	
+	public Compte ajout_compte();
+	public Compte retrait_compte();
+	
+	public Compte injection ();
+	public Compte retrait(int somme, String source);
+	public Compte transaction(int montant, String destinataire);
+	
+	public Compte liaison_tab_cellule(String tab_cellule, int somme);
+	
+	public Compte verification_tab_raison_retrait();
+	public Compte verification_tab_somme_retrait();
+	
+	public String [] deplacement_indices_tab(String [] tab_membre);
+	public int [] deplacement_indices_tab(int tab_membre);
+	
+	public boolean parcourt_tab(String [] tab, int courant, int max);
+	public boolean parcourt_tab(int [] tab, int courant, int max);
+	
+}
